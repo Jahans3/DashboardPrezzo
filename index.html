@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,435 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Deployment Dashboard</h1>
+
+					<br> <br>
+
+					fe-dash.io.thehut.local:8080
+				</section>
+
+				<section>
+					<h3>What is it?</h3>
+
+					<section>
+						<div class="centred-container">
+							<img class="img-plain" src="http://maxehnert.com/app/images/react.svg" alt="React logo">
+							<img class="img-plain" src="https://camo.githubusercontent.com/4af5c867e33d86cf6c714b3589929980b7bd694a/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6e6f64656a732d69636f6e2e737667"
+								 alt="Node logo">
+						</div>
+						Web app consisting of an Express server and a React app
+					</section>
+					<section>
+						<div class="centred-container">
+							<img src="https://www.build-business-websites.co.uk/resources/jenkins-butler-vertical.png"
+								 alt="Jenkins logo" class="img-plain jenkins-logo">
+							<img src="https://web-assets.domo.com/blog/wp-content/uploads/2015/02/connector-google-sheets-logo.png"
+								 alt="Google Sheets logo" class="img-plain landscape-logo">
+							<img src="https://www.citrix.com/content/dam/citrix/en_us/images/logos/citrix/citrix-logo-black.png"
+								 alt="Citrix logo" class="img-plain landscape-logo">
+						</div>
+						Release data aggregator
+					</section>
+					<section>
+						<div class="centred-container">
+							<img src="https://worldvectorlogo.com/logos/socket-io.svg"
+								 alt="Jenkins logo" class="img-plain socket-io-logo">
+						</div>
+						Tool for live monitoring of builds and releases
+					</section>
+				</section>
+
+				<section>
+					<h3>What does it do?</h3>
+					<section>Shows data surrounding the release process:</section>
+					<section>
+						Latest build version, description, result
+						<img src="http://i.imgur.com/cP9jKx2.png" alt="Last build report">
+					</section>
+					<section>
+						Last build committed to master
+						<img src="http://i.imgur.com/kSFxrfs.png" alt="Last commit release">
+					</section>
+					<section>
+						Server block status
+						<img src="http://i.imgur.com/kcBJrY0.png" alt="Server block status">
+					</section>
+					<section>
+						Current build on 999
+						<img src="http://i.imgur.com/GOOEJ3L.png" alt="999">
+					</section>
+					<section>
+						Prelive database replication times
+						<img src="http://i.imgur.com/FYJdGZT.png" alt="Replication">
+					</section>
+					<section>
+						Release outcomes over time
+						<img src="http://i.imgur.com/BkhfLR0.png" alt="Releases chart">
+					</section>
+					<section>
+						Release schedule
+						<div class="release-planning-wrapper">
+							<img src="http://i.imgur.com/fBrmoSf.png" alt="Release planning" class="release-planning-ss">
+						</div>
+					</section>
+					<section>
+						Releases per team
+						<img src="http://i.imgur.com/zzXCgu2.png" alt="Releases by team">
+					</section>
+				</section>
+
+				<section>
+					What went into it?
+					<section>
+						<div class="centred-container">
+							<div class="tool-container">
+								<img src="https://worldvectorlogo.com/logos/socket-io.svg" alt="Socket io logo" class="tool-img img-plain">
+								<span class="tool-text">Socket.io</span>
+							</div>
+
+							<div class="tool-container">
+								<img src="http://d3t0dn7puh4fxw.cloudfront.net/wp-content/uploads/2015/09/expressjs.jpg"
+									 alt="Express and node logos" class="tool-img img-plain">
+								<span class="tool-text">Express</span>
+							</div>
+
+							<div class="tool-container">
+								<img src="http://maxehnert.com/app/images/react.svg" alt="React logo" class="tool-img img-plain">
+								<span class="tool-text">React</span>
+							</div>
+						</div>
+						<div class="centred-container">
+							<div class="tool-container">
+								<img src="https://worldvectorlogo.com/logos/gulp.svg" alt="Gulp logo" class="tool-img img-plain img-gulp">
+								<span class="tool-text">Gulp</span>
+							</div>
+
+							<div class="tool-container">
+								<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Logo_D3.svg/1079px-Logo_D3.svg.png" alt="D3 logo" class="tool-img img-plain">
+								<span class="tool-text">D3</span>
+							</div>
+
+							<div class="tool-container">
+								<img src="https://pbs.twimg.com/profile_images/567000326444556290/-1wfGjNw.png" alt="Babel logo" class="tool-img img-plain">
+								<span class="tool-text">Babel</span>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="tool-container">
+							<img src="https://worldvectorlogo.com/logos/socket-io.svg" alt="Socket io logo" class="tool-img img-plain">
+							<span class="tool-text">Socket.io</span>
+							<p class="text-description">Real-time event-based communication using web sockets (and fallbacks when web sockets are not available)</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="tool-container">
+							<img src="http://d3t0dn7puh4fxw.cloudfront.net/wp-content/uploads/2015/09/expressjs.jpg"
+								 alt="Express and node logos" class="tool-img img-plain">
+							<span class="tool-text">Express</span>
+							<p class="text-description">Framework for making Node-based web applications</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="tool-container">
+							<img src="http://maxehnert.com/app/images/react.svg" alt="React logo" class="tool-img img-plain">
+							<span class="tool-text">React</span>
+							<p class="text-description">UI component library. Re-renders on state change so is useful for apps that have complicated states with lots of mutations</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="tool-container">
+							<img src="https://worldvectorlogo.com/logos/gulp.svg" alt="Gulp logo" class="tool-img img-plain img-gulp">
+							<span class="tool-text">Gulp</span>
+							<p class="text-description">Build tools. Used for compiling our Sass, creating the JS bundle (Browserify) and running Babel transformations</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="tool-container">
+							<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Logo_D3.svg/1079px-Logo_D3.svg.png" alt="D3 logo" class="tool-img img-plain">
+							<span class="tool-text">D3</span>
+							<p class="text-description">SVG manipulation tool, most commonly used for graphs and charts</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="tool-container">
+							<img src="https://pbs.twimg.com/profile_images/567000326444556290/-1wfGjNw.png" alt="Babel logo" class="tool-img img-plain">
+							<span class="tool-text">Babel</span>
+							<p class="text-description">JavaScript compiler primarily used to access yet-to-be-added features from the ECMAScript spec, as well as transforming JS supersets (TypeScript, JSX) back down to JS</p>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					How does it work?
+
+					<section>
+						<br>
+						Once the user is logged in and a connection is established we are able to achieve a unidirectional data flow between the server and the client because we are using web sockets, this helps keep code complexity to a minimum
+					</section>
+					<section>
+						<img src="images/DFDfinal.png" alt="Badly-drawn data flow diagram" class="DFD-img">
+					</section>
+					<section>
+						Data flow:
+					</section>
+					<section>
+						1. Component controllers call their respective APIs
+					</section>
+					<section>
+						2. If the call is successful then the response is passed through the relevant pure functions* to sort and extract the data we want
+						<br>
+						<br>
+						<span class="text-description">
+							*A pure function is a functional programming concept in which the return value of a function is defined only by the given input, it effectively is a black box and has no side effects (it cannot alter any external state).
+						</span>
+					</section>
+					<section>
+						3. Once the data has been sorted it is then passed onto the client by triggering a socket event
+					</section>
+					<section>
+						4. In the client, each component will have subscribed to a specific socket event, when the event is fired a payload is passed to all subscribers
+					</section>
+					<section>
+						5. Components will either use the passed data as content or to trigger a state change
+					</section>
+					<section>
+						<img src="images/DFDfinal.png" alt="Badly-drawn data flow diagram" class="DFD-img">
+					</section>
+				</section>
+
+				<section>
+					Boards
+
+					<section>
+						Currently there are 3 boards:
+					</section>
+					<section>
+						Releases board: <br> <br>
+
+						<ul>
+							<li>Release Outcomes per Day</li>
+							<li>Release Schedule</li>
+							<li>Releases by Team</li>
+						</ul>
+					</section>
+					<section>
+						Builds board: <br> <br>
+
+						<ul>
+							<li>Last Build Report</li>
+							<li>Last Build Committed</li>
+							<li>Current Build on 999</li>
+							<li>Live Releases</li>
+							<li>Replication Times</li>
+						</ul>
+					</section>
+					<section>
+						Main board: <br> <br>
+
+						Contains all components.
+					</section>
+				</section>
+
+				<section>
+					Making a component
+
+					<section>
+						Each component consists of a React component and a corresponding controller
+					</section>
+					<section>
+						Each component should only be dependent on its controller and should not rely on anything else for it to function, this is so each component is self-contained and can be used on multiple boards
+					</section>
+				</section>
+
+				<section>
+					Making a component: Serverside
+
+					<section>
+						1. Navigate to <span class="code-highlight">routes/emitters.js</span>
+					</section>
+					<section>
+						2. Open a new function and write a call to your API
+
+						<br>
+
+						<img src="images/BlackStatus_call.png" alt="Nitro API Call">
+					</section>
+					<section>
+						3. If the call is successful then pass the response to your sorting functions, otherwise terminate the callback
+
+						<br>
+						<img src="images/BlockStatus_pureFn.png" alt="Block Status Sorting Fn">
+					</section>
+					<section>
+						3.a It is important to bear in mind we have lots of async API calls and how easy it is to lock up a js app when they all return to the event loop...
+					</section>
+					<section>
+						...to avoid this we wrap our sorting functions inside <span class="code-highlight">process.nextTick</span> which waits for the call stack to clear before executing the given callback.
+						<br> <br>
+						<img src="images/BlockStatus_responseHandling.png" alt="Nitro Response Handling">
+					</section>
+					<section>
+						4. Once we have gathered our data we trigger a socket event and pass in our payload
+						<br> <br>
+						<span class="code-highlight">io.emit('eventName', payload)</span>
+					</section>
+
+					<section>
+						5. At the bottom of <span class="code-highlight">emitters.js</span>, inside the exported function, add your new function to <span class="code-highlight">concatEmitters</span> and pass the socket object (<span class="code-highlight">io</span>), if you are querying Jenkins you should now pass in the initialised Jenkins object
+					</section>
+                    
+                    <section>
+                        <img src="images/Emitters_main.png" alt="Emitters main fn">
+                    </section>
+				</section>
+
+				<section>
+					Making a component: Clientside
+
+					<section>
+						New to React? Check these out
+
+						<ul class="short-list">
+							<li>Getting started with React: <br> <a href="https://facebook.github.io/react/docs/getting-started.html">facebook.github.io/react/docs/getting-started.html</a></li>
+							<li>Component lifecycle methods: <br> <a href="https://facebook.github.io/react/docs/component-specs.html#lifecycle-methods">facebook.github.io/react/docs/component-specs.html#lifecycle-methods</a></li>
+							<li>Top-level API: <br> <a href="https://facebook.github.io/react/docs/top-level-api.html">facebook.github.io/react/docs/top-level-api.html</a></li>
+							<li>Props: <br> Covered in the above, essentially params passed to a React component</li>
+						</ul>
+					</section>
+
+					<section>
+						1. Go to <span class="code-highlight">src/javascripts/components</span> and create a new file
+						<br> <br>
+						eg. <span class="code-highlight">MyComponent.js</span>
+					</section>
+
+					<section>
+						2. Import all required dependencies and create a new React class (ES5 syntax)
+						<br> <br>
+						<span class="code-highlight">var MyClass = React.createClass({ ... });</span>
+					</section>
+
+					<section>
+						3.a <a href="images/lifecycle.js">Quick look at the React lifecycle methods</a>
+					</section>
+
+					<section>
+						3.b Inside your <span class="code-highlight">componentDidMount</span> method listen out for the socket event you are emitting from your controller
+						<br> <br>
+						<span class="centre-code small code-highlight">componentDidMount:<span class="blue">function</span>() { <br>
+							&nbsp;&nbsp;socket.on(<span class="green">'myEvent'</span>, <span class="blue">function</span>(socket) { <br>
+							&nbsp;&nbsp;<span class="grey">// Do something</span> <br>
+						    &nbsp;&nbsp;} <br>
+                        }</span>
+					</section>
+
+					<section>
+						4. Each dashboard is just a collection of React components stored in a file together, add your new component to the appropriate one
+						<br> <br>
+						<span class="code-highlight">src/javascripts/components/boards</span>
+					</section>
+
+					<section>
+						5.a Open <span class="code-highlight">boards.js</span> inside the boards folder.
+						<br> <br>
+						You will see the boards being imported at the top, a <span class="code-highlight">select</span> tag with all boards inside a <span class="code-highlight">BoardOption</span> component, as well as each board listed inside our object being exported.
+						<br> <br>
+					</section>
+
+					<section>
+						5.b <span class="code-highlight">require</span> your component at the top, put it inside a <span class="code-highlight">BoardOption</span> component and finally export your board.
+						<br> <br>
+						Board naming must be consistent to ensure it's picked up by the root component, <span class="code-highlight">App</span>
+					</section>
+
+					<section>
+						6. Run <span class="code-highlight">$ gulp b</span> to bundle and compile your React app
+					</section>
+				</section>
+
+				<section>
+					Making a component: Testing
+
+					<section>
+						1. Run your app by passing the required environment variables then running <span class="code-highlight">$ node ./bin/www</span>
+						<br> <br>
+						<ul class="short-list">
+							<li><span class="code-highlight">LB_USER</span>: Load balancer username</li>
+							<li><span class="code-highlight">LB_PW</span>: Load balancer password</li>
+							<li><span class="code-highlight">USER_NAME</span>: DC account, use '<span class="code-highlight">thehut\deploymentdashboard</span>'</li>
+							<li><span class="code-highlight">PASSWORD</span>: DC password, use '<span class="code-highlight">LnnqdtiurOZkNRyqh8rs</span>'</li>
+						</ul>
+						<br> <br>
+						<span class="text-description code-highlight">$ LB_USER='xxx' LB_PW='xxx' USER_NAME='xxx' PASSWORD='xxx' node ./bin/www</span>
+					</section>
+					<section>
+						2. See your component at localhost:8080
+					</section>
+				</section>
+
+                <section>
+                    Demo
+                </section>
+
+				<section>
+					Deployment process:
+
+					<section>
+						Disclaimer: This needs a bit of work and will be improved in the future
+					</section>
+
+					<section>
+						1. <span class="code-highlight">ssh</span> onto <span class="code-highlight">fe-dash.io.thehut.local</span> with your DC account</section>
+					<section>
+						2. Find the dashboard process using
+						<br> <br>
+						<span class="code-highlight">$ ps -ef | grep "node"</span></section>
+					<section>
+						3. Using the dashboard PID <span class="code-highlight">kill</span> the process</section>
+					<section>
+						4. Back on your machine <span class="code-highlight">scp</span> the updated files onto the VM</section>
+					<section>
+						5. Restart the dashboard with the same command used to run the app locally, this time however also use <span class="code-highlight">nohup</span> and <span class="code-highlight">disown</span>
+						<br> <br>
+						<span class="code-highlight">$ LB_USER='xxx' LB_PW='xxx' USER_NAME='xxx' PASSWORD='xxx' nohup node ./bin/www & disown</span>
+					</section>
+				</section>
+
+				<section>
+					Upcoming components:
+
+					<section>
+						<ul>
+							<li>Unit Test Code Coverage - Anthony</li>
+							<li>Style Stats per Build - Simon</li>
+                            <li>Jira Workflows - Sam</li>
+						</ul>
+					</section>
+					<section>
+						FEDs have ownership of the project, so add anything you think will be useful for the team
+					</section>
+				</section>
+
+				<section>
+					To do list:
+
+					<br> <br>
+
+					<ul class="short-list">
+                        <li>Add releases archive as source for releases data</li>
+						<li>Front end style overhaul</li>
+						<li>Proper deployment process</li>
+						<li>Test suite</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 

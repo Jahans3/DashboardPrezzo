@@ -1143,7 +1143,6 @@ body {
 .reveal .overlay .viewport {
   position: absolute;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 40px;
@@ -1323,3 +1322,88 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*********************************************
+ * Custom
+ *********************************************/
+.centred-container .img-plain,
+.tool-container .img-plain {
+  border: 0;
+  background: 0;
+  box-shadow: none;
+  margin: 0 15px;
+  width: 150px;
+  height: 150px; }
+
+.centred-container {
+  text-align: center; }
+
+.img-plain.jenkins-logo {
+  width: 100px; }
+
+.img-plain.landscape-logo {
+  height: 67px;
+  margin-bottom: 35px; }
+
+.img-plain.socket-io-logo {
+  height: 120px;
+  margin-top: 10px; }
+
+.tool-container {
+  width: 200px;
+  text-align: center;
+  display: inline-block; }
+  .tool-container .tool-img {
+    margin: 0 auto; }
+  .tool-container .tool-img,
+  .tool-container .tool-text {
+    display: block; }
+  .tool-container .img-gulp {
+    width: 68px; }
+
+.tool-container .text-description {
+  font-size: 18px;
+  width: 442px;
+  margin-left: -114px; }
+
+.release-planning-wrapper {
+  width: 1000px; }
+  .release-planning-wrapper .release-planning-ss {
+    max-width: 700px;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto; }
+
+.DFD-img {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 420px; }
+
+.text-description {
+  font-size: 25px !important; }
+
+.code-highlight {
+  font-family: monospace !important; }
+
+section .short-list li {
+  font-size: 24px;
+  margin: 10px 0; }
+
+.small {
+  font-size: 24px !important;
+  text-align: left !important;
+  display: block; }
+
+.blue {
+  color: #5f8aff; }
+
+.green {
+  color: green; }
+
+.grey {
+  color: grey; }
+
+.centre-code.small.code-highlight {
+  margin-left: 20% !important; }
